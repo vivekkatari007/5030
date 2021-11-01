@@ -73,7 +73,7 @@ class Word:
       raise NotImplementedError('Method only available for Irish and Scottish Gaelic')
 
 if __name__=='__main__':
-  f = open('tests.tsv')
+  f = open('tests.tsv', encoding='utf-8')
   for line in f:
     line = line.rstrip('\n')
     pieces = line.split('\t')
